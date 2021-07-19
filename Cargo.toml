@@ -1,0 +1,16 @@
+[package]
+name = "sentry-dtracing"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[package.metadata.docs.rs]
+all-features = true
+
+[dependencies]
+tracing-subscriber = { path = "../../../../Projects/tracing/tracing-subscriber" }
+tracing-core = { path = "../../../../Projects/tracing/tracing-core" }
+tracing = { path = "../../../../Projects/tracing/tracing" }
+sentry-core = { path = "../sentry-core", features = ["client"] }
+sentry-backtrace = { path = "../sentry-backtrace" }
