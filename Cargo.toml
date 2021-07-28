@@ -9,8 +9,11 @@ edition = "2018"
 all-features = true
 
 [dependencies]
-tracing-subscriber = { path = "../../../../Projects/tracing/tracing-subscriber" }
-tracing-core = { path = "../../../../Projects/tracing/tracing-core" }
-tracing = { path = "../../../../Projects/tracing/tracing" }
-sentry-core = { path = "../sentry-core", features = ["client"] }
-sentry-backtrace = { path = "../sentry-backtrace" }
+tracing-subscriber = "0.2.19"
+tracing-core = "0.1.18"
+tracing = "0.1.26"
+sentry-core = "0.23.0"
+sentry = "0.23.0"
+actix-rt = "2.2.0"
+actix-web = "3"
+tokio = "1.8"
